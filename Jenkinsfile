@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Holt den Code aus deinem Repo
+                // Holt den Code aus DEINEM Repo
                 git branch: 'main',
-                    url: 'https://github.com/DEIN-USER/DEIN-REPO.git'
+                    url: 'https://github.com/Boran-cmd/jenkins.git'
             }
         }
         stage('Build') {
@@ -26,4 +26,3 @@ pipeline {
         }
     }
 }
-
